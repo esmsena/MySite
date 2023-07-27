@@ -107,23 +107,30 @@ function showLista(lista, buttom = "all"){
 
     if(buttom == 'design'){
         lista[0].classList.add('ativo')
-        lista[1].classList.add('ativo')
+        
     }
-    if(buttom == 'graphic'){
-        lista[2].classList.add('ativo');
+    if(buttom == 'desktop'){
         lista[3].classList.add('ativo');
     }
 
     if(buttom == 'website'){
+        lista[1].classList.add('ativo');
+        lista[2].classList.add('ativo');
         lista[4].classList.add('ativo');
         lista[5].classList.add('ativo');
-        lista[6].classList.add('ativo');
-        lista[7].classList.add('ativo');
+        
+        
+    }
+
+    if(buttom == 'teamwork'){
+        lista[1].classList.add('ativo');
+        lista[3].classList.add('ativo');
+        lista[5].classList.add('ativo');
     }
 
     if(buttom == 'all'){
-        lista[0].classList.add('ativo')
-        lista[1].classList.add('ativo')
+        lista[0].classList.add('ativo');
+        lista[1].classList.add('ativo');
         lista[2].classList.add('ativo');
         lista[3].classList.add('ativo');
         lista[4].classList.add('ativo');
@@ -142,12 +149,16 @@ buttonGeral.forEach((item)=>{
             showLista(listaALL, "design")
         }
 
-        if(currentButton.classList.contains('graphic')){
-            showLista(listaALL, "graphic")
+        if(currentButton.classList.contains('desktop')){
+            showLista(listaALL, "desktop")
         }
 
         if(currentButton.classList.contains('website')){
             showLista(listaALL, "website")
+        }
+
+        if(currentButton.classList.contains('teamwork')){
+            showLista(listaALL, "teamwork")
         }
 
         if(currentButton.classList.contains('all')){
