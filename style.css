@@ -367,6 +367,7 @@ main .sobre {
     justify-content: center;
 }
 
+
 .my_services ul li {
     cursor: pointer;
     border-radius: 6px;
@@ -533,7 +534,7 @@ main .sobre {
     color: #3e3d3d;
 }
 
-/* MEUS DIPROMAS E CURSOS */
+/* MEUS DIPlOMAS E CURSOS */
 
 .resume_gerenico .education_content div {
     animation: sobeSecao .5s ease-in-out forwards;
@@ -759,6 +760,11 @@ main .sobre {
 
 /* PROJECTS */
 
+a:hover {
+	background:#ff0;
+	color:#f00;
+	}
+
 .projects {
     padding: 30px;
     display: grid;
@@ -788,6 +794,23 @@ main .sobre {
     font-weight: bold;
 }
 
+/* Seletor para o link que envolve a imagem */
+.projects_armazenamento li a {
+    text-decoration: none; /* Remove sublinhado do link */
+    border: none; /* Retira a borda ao redor do link */
+    padding: 0px; /* Adiciona um espaçamento interno ao redor do link */
+    display: inline-block; /* Faz o link se comportar como um bloco em linha */
+    border-radius: 5px; /* Adiciona cantos arredondados à borda */
+    background-color: #dc3545; /* Define a cor de fundo do link */
+    color: #00000000; /* Define a cor do texto do link como branco */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Adiciona uma transição suave para a mudança de cor de fundo e texto */
+}
+
+/* Estiliza o link quando o mouse passa por cima dele */
+.projects_armazenamento li a:hover {
+    background-color: #00000000; /* Muda a cor de fundo para um tom mais escuro quando o mouse passa por cima */
+    color: #00000000; /* Mantém a cor do texto como branco */
+}
 
 .projects_armazenamento ul {
     display: grid;
@@ -838,7 +861,7 @@ main .sobre {
         opacity: 1;
         transform: translate3d(0, 0px, 0);
     }
-}
+} 
 
 
 /* FOOTER */
